@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taproot Airdrop Zone — ไทย — LiMeiHua</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-badge">LiMeiHua Source Code</div>
+      <h1 class="logo-text">Taproot Airdrop Zone</h1>
+      <p class="hero-subtitle">แพลตฟอร์มสำหรับแจกจ่าย Taproot Assets tokens ผ่าน airdrops พร้อมการตรวจสอบสิทธิ์และจัดการการ claim</p>
+      <a href="https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone" class="github-btn" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        ดูบน GitHub
+      </a>
+    </div>
+
+    <!-- LANGUAGE NAV -->
+    <nav class="lang-nav">
+    <a href="../en/">English</a>
+    <a href="../th/" class="active">ไทย</a>
+    <a href="../zh/">中文</a>
+    <a href="../ja/">日本語</a>
+    <a href="../ko/">한국어</a>
+    <a href="../es/">Español</a>
+    <a href="../fr/">Français</a>
+    <a href="../de/">Deutsch</a>
+    <a href="../pt/">Português</a>
+    <a href="../ru/">Русский</a>
+    <a href="../ar/">العربية</a>
+    <a href="../vi/">Tiếng Việt</a>
+    <a href="../id/">Bahasa Indonesia</a>
+    <a href="../ms/">Bahasa Melayu</a>
+    <a href="../km/">ខ្មែរ</a>
+    <a href="../lo/">ລາວ</a>
+    <a href="../my/">မြန်မာ</a>
+    <a href="../tl/">Tagalog</a>
+    <a href="../mn/">Монгол</a>
+    <a href="../tr/">Türkçe</a>
+    <a href="../pl/">Polski</a>
+    <a href="../uk/">Українська</a>
+    <a href="../cs/">Čeština</a>
+    <a href="../sv/">Svenska</a>
+    <a href="../nl/">Nederlands</a>
+    <a href="../it/">Italiano</a>
+    <a href="../el/">Ελληνικά</a>
+    <a href="../he/">עברית</a>
+    <a href="../fa/">فارسی</a>
+    <a href="../hi/">हिन्दी</a>
+    <a href="../bn/">বাংলা</a>
+    <a href="../ta/">தமிழ்</a>
+    <a href="../te/">తెలుగు</a>
+    <a href="../kn/">ಕನ್ನಡ</a>
+    <a href="../ml/">മലയാളം</a>
+    <a href="../mr/">मराठी</a>
+    <a href="../gu/">ગુજરાતી</a>
+    <a href="../pa/">ਪੰਜਾਬੀ</a>
+    <a href="../ur/">اردو</a>
+    <a href="../si/">සිංහල</a>
+    <a href="../dz/">རྫོང་ཁ</a>
+    <a href="../ne/">नेपाली</a>
+    </nav>
+
+    <!-- SECTION 1: OVERVIEW -->
+    <section class="section">
+      <span class="section-label">ภาพรวม</span>
+      <h2 class="section-title">ความสำคัญของ Source Code ชุดนี้</h2>
+      <p class="section-text">LiMeiHua Source Code — พื้นฐานเทคโนโลยีสำหรับการพัฒนาโครงสร้างพื้นฐานของระบบการเงินในยุคสมัยใหม่</p>
+      <div class="key-points">
+      <div class="key-point">
+        <div class="key-point-number">01</div>
+        <div class="key-point-title">Bitcoin: บล็อกเชนที่แข็งแกร่งที่สุด</div>
+        <div class="key-point-text">Bitcoin เป็น Blockchain ที่แข็งแกร่งที่สุดในโลก เราเลือกวาง transaction ทรัพย์สินของโครงการบนพื้นที่ที่ปลอดภัยที่สุดในโลก นั่นคือบล็อกเชนของ Bitcoin</div>
+      </div>
+      <div class="key-point">
+        <div class="key-point-number">02</div>
+        <div class="key-point-title">Lightning Network สำหรับ UBI</div>
+        <div class="key-point-text">เราเลือก Lightning Network เป็น Layer 2 ของ Bitcoin เพื่อแจกจ่าย Universal Basic Income (UBI) สำหรับมนุษย์เท่านั้น</div>
+      </div>
+      <div class="key-point">
+        <div class="key-point-number">03</div>
+        <div class="key-point-title">WorldApp: ยืนยันความเป็นมนุษย์</div>
+        <div class="key-point-text">เราใช้ WorldApp คัดกรองเฉพาะมนุษย์ (LiMeiHua Lightning Wallet in WorldApp, LiMeiHua Taproot Airdrop in WorldApp)</div>
+      </div>
+      <div class="key-point">
+        <div class="key-point-number">04</div>
+        <div class="key-point-title">โอเพนซอร์สพื้นฐาน</div>
+        <div class="key-point-text">source code เหล่านี้เป็น open source พื้นฐาน สำหรับ developer, บริษัท, ฟินเทค, Startup, องค์กรรัฐ นำไปพัฒนาต่อยอด</div>
+      </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SOURCE CODE FEATURES -->
+    <section class="section">
+      <span class="section-label">ซอร์สโค้ด</span>
+      <h2 class="section-title">คุณสมบัติของ Source Code</h2>
+      <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-name">แคมเปญ Airdrop</div>
+        <div class="feature-desc">สร้างและจัดการแคมเปญ airdrop token พร้อมกฎและกำหนดการที่ปรับแต่งได้</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔧</div>
+        <div class="feature-name">ระบบตรวจสอบสิทธิ์</div>
+        <div class="feature-desc">กำหนดเกณฑ์สิทธิ์ตามประวัติกระเป๋า การถือครอง หรือเงื่อนไขกำหนดเอง</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔗</div>
+        <div class="feature-name">พอร์ทัล Claim</div>
+        <div class="feature-desc">พอร์ทัล claim ที่ใช้งานง่ายสำหรับผู้ใช้ที่มีสิทธิ์ claim airdrop tokens</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <div class="feature-name">ระบบแจกจ่าย</div>
+        <div class="feature-desc">แจกจ่าย Taproot Assets แบบอัตโนมัติเป็นชุดผ่าน Lightning Network</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-name">แดชบอร์ดวิเคราะห์</div>
+        <div class="feature-desc">ติดตามความคืบหน้า airdrop อัตราการ claim และสถิติการแจกจ่าย</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <div class="feature-name">ป้องกัน Sybil</div>
+        <div class="feature-desc">ป้องกันการโจมตี sybil และการ claim ซ้ำในตัว</div>
+      </div>
+      </div>
+
+      <h3 class="section-title" style="margin-top:50px; font-size:1.5rem;">ชุด Source Code ทั้ง 9 ชุด</h3>
+      <div class="repo-list">
+      <div class="repo-item">
+        <div class="repo-num">01</div>
+        <div class="repo-info">
+          <div class="repo-name">Create Taproot Assets</div>
+          <div class="repo-desc">เว็บแอปพลิเคชันสำหรับสร้างและจัดการ Taproot Assets token บนบล็อกเชน Bitcoin ผ่าน Lightning Network</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Create-Taproot-Assets" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Create-Taproot-Assets/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-num">02</div>
+        <div class="repo-info">
+          <div class="repo-name">Taproot Assets WordPress Plugin</div>
+          <div class="repo-desc">ปลั๊กอิน WordPress สำหรับสร้างและจัดการ Taproot Assets token โดยตรงจากแดชบอร์ด WordPress</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Create-Taproot-Assets-WP-Plugin" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Create-Taproot-Assets-WP-Plugin/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-num">03</div>
+        <div class="repo-info">
+          <div class="repo-name">Taproot All Bridge</div>
+          <div class="repo-desc">สะพานข้ามเชนเชื่อมต่อ ERC-20 tokens (Ethereum) กับ Taproot Assets บน Bitcoin ผ่าน smart contracts</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Taproot-All-Bridge" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Taproot-All-Bridge/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-num">04</div>
+        <div class="repo-info">
+          <div class="repo-name">Taproot Payment Gateway</div>
+          <div class="repo-desc">ระบบชำระเงินสำหรับรับ Taproot Assets และ Lightning Network payments ในแอปพลิเคชันอีคอมเมิร์ซและธุรกิจ</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Taproot-Payment-Gateway" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Taproot-Payment-Gateway/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-num">05</div>
+        <div class="repo-info">
+          <div class="repo-name">Taproot Airdrop Zone</div>
+          <div class="repo-desc">แพลตฟอร์มสำหรับแจกจ่าย Taproot Assets tokens ผ่าน airdrops พร้อมการตรวจสอบสิทธิ์และจัดการการ claim</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Taproot-Airdrop-Zone/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-num">06</div>
+        <div class="repo-info">
+          <div class="repo-name">Lightning Wallet</div>
+          <div class="repo-desc">กระเป๋า Lightning Network หลายแพลตฟอร์ม (Web, Mobile, Desktop) สำหรับส่ง รับ Bitcoin และ Taproot Assets</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Lightning-Wallet" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Lightning-Wallet/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-num">07</div>
+        <div class="repo-info">
+          <div class="repo-name">Lightning Wallet in WorldApp</div>
+          <div class="repo-desc">กระเป๋า Lightning Network ที่เชื่อมต่อกับ WorldApp ใช้ World ID สำหรับยืนยันตัวตนมนุษย์และแจกจ่าย UBI</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Lightning-Wallet-in-WorldApp" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Lightning-Wallet-in-WorldApp/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-num">08</div>
+        <div class="repo-info">
+          <div class="repo-name">Taproot Airdrop in WorldApp</div>
+          <div class="repo-desc">ระบบ airdrop Taproot Assets ภายใน WorldApp แจกจ่าย tokens เฉพาะมนุษย์ที่ยืนยันผ่าน World ID</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-in-WorldApp" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Taproot-Airdrop-in-WorldApp/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      <div class="repo-item">
+        <div class="repo-num">09</div>
+        <div class="repo-info">
+          <div class="repo-name">Lightning Node</div>
+          <div class="repo-desc">ระบบจัดการ Lightning Network node สำหรับ deploy ติดตาม และจัดการ LND/CLN nodes พร้อมรองรับ Taproot Assets</div>
+          <div class="repo-links">
+            <a href="https://github.com/kanutsanan1988/LiMeiHua-Lightning-Node" target="_blank">→ ดูบน GitHub</a>
+            <a href="https://kanutsanan1988.github.io/LiMeiHua-Lightning-Node/th/" target="_blank">→ เอกสาร</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: BUSINESS MODEL -->
+    <section class="section">
+      <span class="section-label">โมเดลธุรกิจ</span>
+      <h2 class="section-title">Business Model แบบ Startup</h2>
+    <div class="biz-grid">
+      <div class="biz-card">
+        <div class="biz-card-label">โมเดลรายได้</div>
+        <div class="biz-card-content"><ul>
+          <li>ค่าตั้งค่าแคมเปญ Airdrop</li>
+          <li>ค่าธรรมเนียมธุรกรรมต่อการแจกจ่าย</li>
+          <li>สมัครสมาชิกวิเคราะห์พรีเมียม</li>
+          <li>ที่ปรึกษาระบบตรวจสอบสิทธิ์กำหนดเอง</li>
+        </ul></div>
+      </div>
+      <div class="biz-card">
+        <div class="biz-card-label">กลุ่มเป้าหมาย</div>
+        <div class="biz-card-content"><ul>
+          <li>ผู้ออก Token</li>
+          <li>โปรเจกต์ DeFi</li>
+          <li>เอเจนซี่การตลาด</li>
+          <li>โปรเจกต์ที่ขับเคลื่อนโดยชุมชน</li>
+        </ul></div>
+      </div>
+      <div class="biz-card">
+        <div class="biz-card-label">คุณค่าที่นำเสนอ</div>
+        <div class="biz-card-content"><ul>
+          <li>แจกจ่าย token อัตโนมัติ</li>
+          <li>ป้องกัน sybil ในตัว</li>
+          <li>ส่งเร็วผ่าน Lightning</li>
+          <li>วิเคราะห์ครอบคลุม</li>
+        </ul></div>
+      </div>
+      <div class="biz-card">
+        <div class="biz-card-label">ความได้เปรียบในการแข่งขัน</div>
+        <div class="biz-card-content"><ul>
+          <li>แพลตฟอร์ม airdrop Taproot Assets เดียว</li>
+          <li>ความเร็ว Lightning Network</li>
+          <li>ต้านทาน Sybil โดยการออกแบบ</li>
+          <li>ขยายได้ถึงผู้รับนับล้าน</li>
+        </ul></div>
+      </div>
+    </div>
+    </section>
+
+    <!-- SECTION 4: DEDICATION -->
+    <section class="section dedication">
+      <span class="section-label">การอุทิศ</span>
+      <div class="dedication-quote">ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว (LiMeiHua Grand Mother)</div>
+      <p class="dedication-author">สร้างโดย Mr. Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)</p>
+      <p class="dedication-link"><a href="https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna" target="_blank">https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna</a></p>
+    </section>
+
+    <!-- SECTION 5: REFERENCES -->
+    <section class="section">
+      <span class="section-label">อ้างอิง</span>
+      <h2 class="section-title">บทความอ้างอิง</h2>
+      <ul class="ref-list">
+      <li class="ref-item">
+        <a href="https://youtu.be/ZDepircp0sY?si=KjfQJzCWuX-5NFWY" target="_blank">
+          <div class="ref-title">เข้าสู่กระบวนการเตรียมการ การเริ่มต้นสร้างโครงสร้างพื้นฐานทางการเงิน</div>
+          <div class="ref-url">https://youtu.be/ZDepircp0sY?si=KjfQJzCWuX-5NFWY...</div>
+        </a>
+      </li>
+      <li class="ref-item">
+        <a href="https://www.facebook.com/story.php?story_fbid=1015820460563076&id=100076053767601&rdid=bLqnOiDKXWLOlkMi#" target="_blank">
+          <div class="ref-title">เหตุผลและที่มา</div>
+          <div class="ref-url">https://www.facebook.com/story.php?story_fbid=1015820460563076&amp;id=10007605376760...</div>
+        </a>
+      </li>
+      <li class="ref-item">
+        <a href="https://www.facebook.com/story.php?story_fbid=1024648076680314&id=100076053767601&rdid=ux2Ow8Iqxz7NkjBp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1GqVPKLHkW%2F#" target="_blank">
+          <div class="ref-title">โครงสร้างทางการเงินยุคใหม่ในระบบเมืองใหม่</div>
+          <div class="ref-url">https://www.facebook.com/story.php?story_fbid=1024648076680314&amp;id=10007605376760...</div>
+        </a>
+      </li>
+      <li class="ref-item">
+        <a href="https://www.facebook.com/story.php?story_fbid=122232318688029361&id=61577880854511&rdid=jjRMZVnDFuZlz5Kd&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F15ZjTdnQEe%2F#" target="_blank">
+          <div class="ref-title">การสร้างนวัตกรรมเพื่อประสานการทำงานของเทคโนโลยี</div>
+          <div class="ref-url">https://www.facebook.com/story.php?story_fbid=122232318688029361&amp;id=615778808545...</div>
+        </a>
+      </li>
+      <li class="ref-item">
+        <a href="https://www.facebook.com/story.php?story_fbid=935916175620166&id=100076053767601&rdid=2z8dBMbU3tOJPeaH#" target="_blank">
+          <div class="ref-title">มนุษย์ทุกคนกำลังจะมีเวลาว่างมากขึ้น</div>
+          <div class="ref-url">https://www.facebook.com/story.php?story_fbid=935916175620166&amp;id=100076053767601...</div>
+        </a>
+      </li>
+      <li class="ref-item">
+        <a href="https://www.facebook.com/story.php?story_fbid=919285414430788&id=100090480123538&rdid=gHVtUTgzD07qAXMk#" target="_blank">
+          <div class="ref-title">อารยธรรมมนุษย์จะถูกอัพเกรด</div>
+          <div class="ref-url">https://www.facebook.com/story.php?story_fbid=919285414430788&amp;id=100090480123538...</div>
+        </a>
+      </li>
+      <li class="ref-item">
+        <a href="https://www.facebook.com/story.php?story_fbid=122167538204929361&id=61577880854511" target="_blank">
+          <div class="ref-title">นาฬิกาเหตุการณ์</div>
+          <div class="ref-url">https://www.facebook.com/story.php?story_fbid=122167538204929361&amp;id=615778808545...</div>
+        </a>
+      </li>
+      <li class="ref-item">
+        <a href="https://drive.google.com/file/d/1Uf50WvHYnoK4utfsdkNjcIMDAA1eNNh4/view?usp=drivesdk" target="_blank">
+          <div class="ref-title">Business Plan (Google Drive)</div>
+          <div class="ref-url">https://drive.google.com/file/d/1Uf50WvHYnoK4utfsdkNjcIMDAA1eNNh4/view?usp=drive...</div>
+        </a>
+      </li>
+      </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer-text">© 2026 โครงการ LiMeiHua สงวนลิขสิทธิ์</p>
+    </footer>
+  </div>
+</body>
+</html>
