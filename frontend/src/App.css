@@ -1,0 +1,466 @@
+/**
+ * LiMeiHua Taproot Airdrop Zone - Frontend Styles
+ * 
+ * ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่
+ * เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother
+ * และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)
+ * URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #00ffff;
+  --secondary: #ff00ff;
+  --bg-dark: #0a0e27;
+  --bg-darker: #050812;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border: #1a1f3a;
+  --success: #00ff00;
+  --warning: #ffaa00;
+  --error: #ff0055;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-darker);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============ Header ============ */
+
+.header {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  border-bottom: 2px solid var(--primary);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.header-content p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, var(--secondary), #cc00cc);
+  color: var(--bg-dark);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+.logout-btn:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* ============ Container ============ */
+
+.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* ============ Message Box ============ */
+
+.message-box {
+  background: rgba(0, 255, 255, 0.1);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============ Auth Section ============ */
+
+.auth-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.auth-card {
+  background: linear-gradient(135deg, #0f1535 0%, #1a1f3a 100%);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.auth-card h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.user-section {
+  background: linear-gradient(135deg, #0f1535 0%, #1a1f3a 100%);
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.2);
+}
+
+.user-section h2 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+/* ============ Forms ============ */
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(10, 14, 39, 0.8);
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--primary), #00cccc);
+  color: var(--bg-dark);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.submit-btn:hover:not(:disabled) {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+  transform: scale(1.02);
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ============ Tabs ============ */
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab:hover {
+  color: var(--primary);
+}
+
+.tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* ============ Tab Content ============ */
+
+.tab-content {
+  animation: fadeIn 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============ Campaigns Grid ============ */
+
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.campaign-card {
+  background: linear-gradient(135deg, #0f1535 0%, #1a1f3a 100%);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.campaign-card:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.campaign-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.campaign-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.campaign-card p strong {
+  color: var(--text-primary);
+}
+
+.select-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, var(--primary), #00cccc);
+  color: var(--bg-dark);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.select-btn:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transform: scale(1.02);
+}
+
+/* ============ Stats Grid ============ */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #0f1535 0%, #1a1f3a 100%);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ============ Admin Section ============ */
+
+.admin-section {
+  background: linear-gradient(135deg, #0f1535 0%, #1a1f3a 100%);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.admin-section h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* ============ User Claim Section ============ */
+
+.user-claim-section {
+  background: linear-gradient(135deg, #0f1535 0%, #1a1f3a 100%);
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.1);
+  margin-top: 2rem;
+}
+
+.user-claim-section h2 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+/* ============ Campaigns Section ============ */
+
+.campaigns-section {
+  margin-bottom: 2rem;
+}
+
+.campaigns-section h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* ============ Stats Section ============ */
+
+.stats-section {
+  margin-top: 2rem;
+}
+
+.stats-section h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* ============ Empty State ============ */
+
+.empty-state {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 2rem;
+  font-style: italic;
+}
+
+/* ============ Footer ============ */
+
+.footer {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  border-top: 2px solid var(--primary);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* ============ Responsive ============ */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .auth-section {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .campaigns-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
