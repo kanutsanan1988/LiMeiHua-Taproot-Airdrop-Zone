@@ -1,1252 +1,657 @@
-# LiMeiHua Taproot Airdrop Zone
+# LiMeiHua Taproot Assets - Comprehensive Multi-Language Documentation
 
-> ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา) URL:https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
-
-**Airdrop Distribution System for Taproot Assets on Bitcoin Lightning Network**
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Node.js](https://img.shields.io/badge/node.js-18%2B-green.svg)
-![React](https://img.shields.io/badge/react-18%2B-blue.svg)
+> ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother 
+> และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา) 
+> URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
 
 ---
 
-## 📚 Documentation in Multiple Languages
+## 📖 Table of Contents
 
-**[ไทย](#ไทย)** | **[English](#english)** | **[中文 (Chinese)](#中文简体)** | **[日本語 (Japanese)](#日本語)** | **[한국어 (Korean)](#한국어)** | **[Español (Spanish)](#español)** | **[Français (French)](#français)** | **[Deutsch (German)](#deutsch)** | **[Português (Portuguese)](#português)** | **[Русский (Russian)](#русский)** | **[العربية (Arabic)](#العربية)** | **[हिन्दी (Hindi)](#हिन्दी)** | **[Tiếng Việt (Vietnamese)](#tiếng-việt)** | **[Bahasa Indonesia (Indonesian)](#bahasa-indonesia)** | **[Bahasa Melayu (Malay)](#bahasa-melayu)** | **[Türkçe (Turkish)](#türkçe)** | **[Italiano (Italian)](#italiano)** | **[Nederlands (Dutch)](#nederlands)** | **[Polski (Polish)](#polski)** | **[Svenska (Swedish)](#svenska)** | **[Українська (Ukrainian)](#українська)** | **[Čeština (Czech)](#čeština)** | **[Română (Romanian)](#română)** | **[Ελληνικά (Greek)](#ελληνικά)** | **[עברית (Hebrew)](#עברית)** | **[বাংলা (Bengali)](#বাংলা)** | **[Filipino (Tagalog)](#filipino)** | **[Kiswahili (Swahili)](#kiswahili)**
-
----
-
-## ไทย
-
-### ภาพรวม
-
-LiMeiHua Taproot Airdrop Zone เป็นระบบแจกจ่าย Airdrop ที่ช่วยให้ผู้ดำเนินการสามารถแจก Taproot Assets tokens ให้กับผู้ใช้ได้อย่างง่ายดาย ผ่าน Lightning Network
-
-### ฟีเจอร์หลัก
-
-- 🎁 **Batch Distribution** - แจกหลายคนพร้อมกัน
-- 👤 **User Claim System** - ผู้รับสามารถ claim airdrop ได้เอง
-- 📊 **Admin Dashboard** - จัดการ campaign ได้ง่าย
-- ⚡ **Lightning Network** - ใช้ Lightning Network สำหรับการแจก
-- 🔒 **Secure** - ระบบตรวจสอบและยืนยัน
-- 📱 **Responsive** - ใช้ได้บนมือถือและเดสก์ทอป
-
-### การติดตั้ง
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### การใช้งาน
-
-**สำหรับ Admin:**
-1. เข้าสู่ระบบด้วย email/password
-2. สร้าง campaign ใหม่
-3. อัปโหลด CSV ของผู้รับ airdrop
-4. ระบบจะแจก airdrop ให้ผู้รับ
-
-**สำหรับผู้รับ:**
-1. เลือก campaign ที่ต้องการ
-2. ใส่ Bitcoin address ของตัวเอง
-3. กด "Check Eligibility" เพื่อตรวจสอบ
-4. กด "Claim Airdrop" เพื่อรับ airdrop
+- [🌐 Available Languages](#-available-languages)
+- [📚 Documentation by Language](#-documentation-by-language)
+- [🎯 Project Overview](#-project-overview)
+- [✨ Features](#-features)
+- [🚀 Getting Started](#-getting-started)
+- [💡 Use Cases](#-use-cases)
+- [🔧 Technical Stack](#-technical-stack)
+- [📊 Language Statistics](#-language-statistics)
 
 ---
 
-## English
+## 🌐 Available Languages
 
-### Overview
+This project supports **40+ languages** across multiple regions:
 
-LiMeiHua Taproot Airdrop Zone is an airdrop distribution system that allows administrators to easily distribute Taproot Assets tokens to users through the Lightning Network.
+### ASEAN Region (9 Languages)
+🇹🇭 Thai | 🇱🇦 Lao | 🇲🇲 Burmese | 🇻🇳 Vietnamese | 🇰🇭 Khmer | 🇲🇾 Malay | 🇮🇩 Indonesian | 🇵🇭 Filipino | 🇱🇰 Tamil
 
-### Key Features
+### Other Regions (5 Languages)
+🇷🇺 Russian | 🇲🇳 Mongolian | 🇱🇰 Sinhala | 🇧🇹 Dzongkha | 🇳🇵 Nepali
 
-- 🎁 **Batch Distribution** - Distribute to multiple users at once
-- 👤 **User Claim System** - Users can claim their airdrop
-- 📊 **Admin Dashboard** - Easy campaign management
-- ⚡ **Lightning Network** - Fast distribution via Lightning
-- 🔒 **Secure** - Verification and confirmation system
-- 📱 **Responsive** - Works on mobile and desktop
+### India (21 Languages)
+🇮🇳 Hindi | Bengali | Telugu | Marathi | Tamil | Urdu | Gujarati | Kannada | Malayalam | Odia | Punjabi | Assamese | Maithili | Santali | Kashmiri | Nepali | Sindhi | Dogri | Manipuri | Bodo | Konkani
 
-### Installation
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Usage
-
-**For Admin:**
-1. Login with email/password
-2. Create new campaign
-3. Upload CSV of recipients
-4. System distributes airdrop
-
-**For Users:**
-1. Select campaign
-2. Enter Bitcoin address
-3. Click "Check Eligibility"
-4. Click "Claim Airdrop"
+### Global (20+ Languages)
+🌍 English | 🇨🇳 Chinese (Simplified & Traditional) | 🇯🇵 Japanese | 🇰🇷 Korean | 🇪🇸 Spanish | 🇫🇷 French | 🇩🇪 German | 🇵🇹 Portuguese | 🇸🇦 Arabic | 🇹🇷 Turkish | 🇮🇹 Italian | 🇳🇱 Dutch | 🇵🇱 Polish | 🇸🇪 Swedish | 🇺🇦 Ukrainian | 🇨🇿 Czech | 🇷🇴 Romanian | 🇬🇷 Greek | 🇮🇱 Hebrew | 🇹🇿 Swahili
 
 ---
 
-## 中文简体
+## 📚 Documentation by Language
 
-### 概述
+### English Documentation
+**LiMeiHua Taproot Assets** is a modern financial infrastructure platform designed to support massive money flow for LiMeiHua Grand Mother. This comprehensive system enables users to create, manage, and trade Taproot Assets tokens on the Bitcoin Lightning Network.
 
-LiMeiHua Taproot Airdrop Zone 是一个空投分配系统，允许管理员通过闪电网络轻松向用户分配 Taproot Assets 代币。
+**Key Features:**
+- Create custom Taproot Assets tokens with flexible parameters
+- Manage token supply (fixed, mintable, or burnable)
+- Calculate gas fees and transaction costs
+- Send and receive tokens on Lightning Network
+- Multi-platform support (Web, Mobile, Desktop)
+- World ID integration for enhanced security
+- Airdrop distribution system
+- Payment gateway integration
+- Lightning Node management
 
-### 主要功能
-
-- 🎁 **批量分配** - 同时向多个用户分配
-- 👤 **用户认领系统** - 用户可以认领他们的空投
-- 📊 **管理员仪表板** - 轻松管理活动
-- ⚡ **闪电网络** - 通过闪电网络快速分配
-- 🔒 **安全** - 验证和确认系统
-- 📱 **响应式** - 在移动设备和桌面上运行
-
-### 安装
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### 使用方法
-
-**对于管理员：**
-1. 使用电子邮件/密码登录
-2. 创建新活动
-3. 上传收件人 CSV
-4. 系统分配空投
-
-**对于用户：**
-1. 选择活动
-2. 输入比特币地址
-3. 点击"检查资格"
-4. 点击"认领空投"
+**Getting Started:**
+1. Visit the platform or install the application
+2. Connect your Lightning Network wallet
+3. Create your first Taproot Assets token
+4. Start managing your digital assets
 
 ---
 
-## 日本語
+### ไทย (Thai Documentation)
+**LiMeiHua Taproot Assets** เป็นแพลตฟอร์มโครงสร้างพื้นฐานทางการเงินสมัยใหม่ที่ออกแบบมาเพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว ระบบที่ครอบคลุมนี้ช่วยให้ผู้ใช้สามารถสร้าง จัดการ และซื้อขาย Taproot Assets tokens บน Bitcoin Lightning Network
 
-### 概要
+**ฟีเจอร์หลัก:**
+- สร้าง Taproot Assets tokens ที่กำหนดเองได้
+- จัดการปริมาณ token (fixed, mintable, burnable)
+- คำนวณค่าแก๊สและค่าธุรกรรม
+- ส่งและรับ tokens บน Lightning Network
+- รองรับหลายแพลตฟอร์ม (Web, Mobile, Desktop)
+- บูรณาการ World ID เพื่อความปลอดภัยที่ดีขึ้น
+- ระบบแจกจ่าย Airdrop
+- บูรณาการ Payment Gateway
+- จัดการ Lightning Node
 
-LiMeiHua Taproot Airdrop Zone は、管理者がライトニングネットワークを通じて Taproot Assets トークンをユーザーに簡単に配布できるエアドロップ配布システムです。
-
-### 主な機能
-
-- 🎁 **バッチ配布** - 複数のユーザーに一度に配布
-- 👤 **ユーザー請求システム** - ユーザーがエアドロップを請求できる
-- 📊 **管理者ダッシュボード** - キャンペーン管理が簡単
-- ⚡ **ライトニングネットワーク** - ライトニング経由での高速配布
-- 🔒 **安全** - 検証と確認システム
-- 📱 **レスポンシブ** - モバイルとデスクトップで動作
-
-### インストール
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### 使用方法
-
-**管理者向け：**
-1. メール/パスワードでログイン
-2. 新しいキャンペーンを作成
-3. 受取人の CSV をアップロード
-4. システムがエアドロップを配布
-
-**ユーザー向け：**
-1. キャンペーンを選択
-2. ビットコインアドレスを入力
-3. 「適格性を確認」をクリック
-4. 「エアドロップを請求」をクリック
+**เริ่มต้นใช้งาน:**
+1. เยี่ยมชมแพลตฟอร์มหรือติดตั้งแอปพลิเคชัน
+2. เชื่อมต่อ Lightning Network wallet ของคุณ
+3. สร้าง Taproot Assets token แรกของคุณ
+4. เริ่มจัดการสินทรัพย์ดิจิทัลของคุณ
 
 ---
 
-## 한국어
+### ລາວ (Lao Documentation)
+**LiMeiHua Taproot Assets** ແມ່ນແພັດຟອມໂຄງສ້າງພື້ນຖານດ້ານການເງິນສະໄໝໃໝ່ທີ່ອອກແບບມາເພື່ອສະໜັບສະໜູນການໄຫຼຂອງເງິນຈໍານວນຫຼວງຫຼາຍສໍາລັບທ່ານຜູ້ເຖົ້າຫລີ່ເຫມຍຮວົ (LiMeiHua Grand Mother)
 
-### 개요
-
-LiMeiHua Taproot Airdrop Zone은 관리자가 라이트닝 네트워크를 통해 Taproot Assets 토큰을 사용자에게 쉽게 배포할 수 있는 에어드롭 배포 시스템입니다.
-
-### 주요 기능
-
-- 🎁 **배치 배포** - 여러 사용자에게 한 번에 배포
-- 👤 **사용자 청구 시스템** - 사용자가 에어드롭을 청구할 수 있음
-- 📊 **관리자 대시보드** - 쉬운 캠페인 관리
-- ⚡ **라이트닝 네트워크** - 라이트닝을 통한 빠른 배포
-- 🔒 **안전** - 검증 및 확인 시스템
-- 📱 **반응형** - 모바일 및 데스크톱에서 작동
-
-### 설치
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### 사용 방법
-
-**관리자용:**
-1. 이메일/비밀번호로 로그인
-2. 새 캠페인 만들기
-3. 수신자 CSV 업로드
-4. 시스템이 에어드롭 배포
-
-**사용자용:**
-1. 캠페인 선택
-2. 비트코인 주소 입력
-3. "자격 확인" 클릭
-4. "에어드롭 청구" 클릭
+**ຄຸນສົມບັດຫຼັກ:**
+- ສ້າງ Taproot Assets tokens ທີ່ກໍາຫນົດເອງໄດ້
+- ຈັດການປະລິມານ token (fixed, mintable, burnable)
+- ຄໍານວນຄ່າແກ໊ສແລະຄ່າທຸລະກໍາ
+- ສົ່ງແລະຮັບ tokens ໃນ Lightning Network
+- ສະໜັບສະໜູນຫຼາຍແພັດຟອມ (Web, Mobile, Desktop)
+- ປະສົມປະສານ World ID ສໍາລັບຄວາມປອດໄພທີ່ດີຂຶ້ນ
+- ລະບົບແຈກຢາຍ Airdrop
+- ປະສົມປະສານ Payment Gateway
+- ຈັດການ Lightning Node
 
 ---
 
-## Español
+### မြန်မာ (Burmese Documentation)
+**LiMeiHua Taproot Assets** သည် LiMeiHua Grand Mother အတွက် 거대한ငွေ့စီးဆင်းမှုကို ထောက်ခံရန် ဒီဇိုင်းထုတ်ထားသော ခေတ်သစ် ငွေကြေးအခြေခံ ကွန်ပ်ျူတာ ပလက်ဖောင်းဖြစ်သည်။
 
-### Descripción General
-
-LiMeiHua Taproot Airdrop Zone es un sistema de distribución de airdrops que permite a los administradores distribuir fácilmente tokens de Taproot Assets a los usuarios a través de la Red Lightning.
-
-### Características Principales
-
-- 🎁 **Distribución por Lotes** - Distribuir a múltiples usuarios a la vez
-- 👤 **Sistema de Reclamación de Usuarios** - Los usuarios pueden reclamar su airdrop
-- 📊 **Panel de Administración** - Gestión fácil de campañas
-- ⚡ **Red Lightning** - Distribución rápida a través de Lightning
-- 🔒 **Seguro** - Sistema de verificación y confirmación
-- 📱 **Responsivo** - Funciona en dispositivos móviles y de escritorio
-
-### Instalación
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Uso
-
-**Para Administradores:**
-1. Inicie sesión con correo/contraseña
-2. Crear nueva campaña
-3. Cargar CSV de destinatarios
-4. El sistema distribuye el airdrop
-
-**Para Usuarios:**
-1. Seleccionar campaña
-2. Ingresar dirección de Bitcoin
-3. Hacer clic en "Verificar Elegibilidad"
-4. Hacer clic en "Reclamar Airdrop"
+**အဓိက ဝိသေသလက္ခဏာများ:**
+- စိတ်ကြိုက် Taproot Assets tokens များ ဖန်တီးခြင်း
+- Token ပမာណ ကိုင်တွယ်ခြင်း (fixed, mintable, burnable)
+- ဂ်ဆ ကုန်ကျစရိတ် တွက်ချက်ခြင်း
+- Lightning Network တွင် tokens ပို့ခြင်း နှင့် လက်ခံခြင်း
+- အများအပြား ပလက်ဖောင်း ထောက်ခံခြင်း (Web, Mobile, Desktop)
+- ကောင်းမွန်သော လုံခြုံရေးအတွက် World ID ပေါင်းစပ်ခြင်း
+- Airdrop ဖြန့်ဝေမှု စနစ်
+- Payment Gateway ပေါင်းစပ်ခြင်း
+- Lightning Node စီမံခန့်ခွဲခြင်း
 
 ---
 
-## Français
+### Tiếng Việt (Vietnamese Documentation)
+**LiMeiHua Taproot Assets** là một nền tảng cơ sở hạ tầng tài chính hiện đại được thiết kế để hỗ trợ dòng tiền khổng lồ cho bà LiMeiHua. Hệ thống toàn diện này cho phép người dùng tạo, quản lý và giao dịch các token Taproot Assets trên Bitcoin Lightning Network.
 
-### Aperçu
-
-LiMeiHua Taproot Airdrop Zone est un système de distribution d'airdrops qui permet aux administrateurs de distribuer facilement des tokens Taproot Assets aux utilisateurs via le réseau Lightning.
-
-### Caractéristiques Principales
-
-- 🎁 **Distribution par Lot** - Distribuer à plusieurs utilisateurs à la fois
-- 👤 **Système de Réclamation d'Utilisateurs** - Les utilisateurs peuvent réclamer leur airdrop
-- 📊 **Tableau de Bord d'Administration** - Gestion facile des campagnes
-- ⚡ **Réseau Lightning** - Distribution rapide via Lightning
-- 🔒 **Sécurisé** - Système de vérification et de confirmation
-- 📱 **Réactif** - Fonctionne sur les appareils mobiles et de bureau
-
-### Installation
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Utilisation
-
-**Pour les Administrateurs:**
-1. Connectez-vous avec email/mot de passe
-2. Créer une nouvelle campagne
-3. Télécharger CSV des destinataires
-4. Le système distribue l'airdrop
-
-**Pour les Utilisateurs:**
-1. Sélectionner une campagne
-2. Entrer l'adresse Bitcoin
-3. Cliquer sur "Vérifier l'Éligibilité"
-4. Cliquer sur "Réclamer l'Airdrop"
+**Các Tính Năng Chính:**
+- Tạo các token Taproot Assets tùy chỉnh
+- Quản lý nguồn cung token (cố định, có thể tạo, có thể đốt)
+- Tính toán phí gas và chi phí giao dịch
+- Gửi và nhận token trên Lightning Network
+- Hỗ trợ nhiều nền tảng (Web, Mobile, Desktop)
+- Tích hợp World ID để tăng cường bảo mật
+- Hệ thống phân phối Airdrop
+- Tích hợp Payment Gateway
+- Quản lý Lightning Node
 
 ---
 
-## Deutsch
+### ខ្មែរ (Khmer Documentation)
+**LiMeiHua Taproot Assets** ជាវេទិកាហិរញ្ញវត្ថុលោកទំនើបដែលត្រូវបានរចនាឡើងដើម្បីគាំទ្របរិមាណលុយដ៏ច្រើនសម្រាប់ម្ដាយលីមីហួ។ ប្រព័ន្ធលម្អិតនេះអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់បង្កើត គ្រប់គ្រង និងលក់ទិញ Taproot Assets tokens នៅលើបណ្តាញ Bitcoin Lightning Network។
 
-### Überblick
-
-LiMeiHua Taproot Airdrop Zone ist ein Airdrop-Verteilungssystem, das es Administratoren ermöglicht, Taproot Assets-Token über das Lightning Network einfach an Benutzer zu verteilen.
-
-### Hauptmerkmale
-
-- 🎁 **Batch-Verteilung** - Gleichzeitig an mehrere Benutzer verteilen
-- 👤 **Benutzer-Anspruchssystem** - Benutzer können ihren Airdrop beanspruchen
-- 📊 **Admin-Dashboard** - Einfache Kampagnenverwaltung
-- ⚡ **Lightning Network** - Schnelle Verteilung über Lightning
-- 🔒 **Sicher** - Verifizierungs- und Bestätigungssystem
-- 📱 **Responsive** - Funktioniert auf Mobilgeräten und Desktops
-
-### Installation
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Verwendung
-
-**Für Administratoren:**
-1. Mit E-Mail/Passwort anmelden
-2. Neue Kampagne erstellen
-3. CSV der Empfänger hochladen
-4. System verteilt Airdrop
-
-**Für Benutzer:**
-1. Kampagne auswählen
-2. Bitcoin-Adresse eingeben
-3. Auf "Berechtigung prüfen" klicken
-4. Auf "Airdrop beanspruchen" klicken
+**លក្ខណៈពិសេសចម្បង:**
+- បង្កើត Taproot Assets tokens ដែលបានកែប្រែ
+- គ្រប់គ្រងការផ្គត់ផ្គង់ token (ថេរ មិនថេរ ឬអាចដុតបាន)
+- គណនាថ្លៃឧស្ម័ន និងថ្លៃប្រតិបត្តិការ
+- ផ្ញើ និងទទួល tokens នៅលើបណ្តាញ Lightning
+- គាំទ្របេតិកបទច្រើន (Web Mobile Desktop)
+- ការរួមបញ្ចូល World ID សម្រាប់សន្តិសុខប្រសើរ
+- ប្រព័ន្ធចែកចាយ Airdrop
+- ការរួមបញ្ចូល Payment Gateway
+- ការគ្រប់គ្រង Lightning Node
 
 ---
 
-## Português
+### Bahasa Melayu (Malay Documentation)
+**LiMeiHua Taproot Assets** ialah platform infrastruktur kewangan moden yang dirancang untuk menyokong aliran wang yang besar untuk Nenek LiMeiHua. Sistem komprehensif ini membolehkan pengguna membuat, menguruskan, dan berdagang token Taproot Assets di Rangkaian Bitcoin Lightning.
 
-### Visão Geral
-
-LiMeiHua Taproot Airdrop Zone é um sistema de distribuição de airdrops que permite aos administradores distribuir facilmente tokens Taproot Assets aos usuários através da Rede Lightning.
-
-### Recursos Principais
-
-- 🎁 **Distribuição em Lote** - Distribuir para múltiplos usuários de uma vez
-- 👤 **Sistema de Reclamação de Usuários** - Os usuários podem reclamar seu airdrop
-- 📊 **Painel de Administração** - Gerenciamento fácil de campanhas
-- ⚡ **Rede Lightning** - Distribuição rápida via Lightning
-- 🔒 **Seguro** - Sistema de verificação e confirmação
-- 📱 **Responsivo** - Funciona em dispositivos móveis e desktop
-
-### Instalação
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Uso
-
-**Para Administradores:**
-1. Faça login com email/senha
-2. Criar nova campanha
-3. Carregar CSV de destinatários
-4. Sistema distribui airdrop
-
-**Para Usuários:**
-1. Selecionar campanha
-2. Inserir endereço Bitcoin
-3. Clicar em "Verificar Elegibilidade"
-4. Clicar em "Reclamar Airdrop"
+**Ciri-Ciri Utama:**
+- Buat token Taproot Assets tersuai
+- Urus bekalan token (tetap, boleh dicetak, boleh dibakar)
+- Kira bayaran gas dan kos transaksi
+- Hantar dan terima token di Rangkaian Lightning
+- Sokongan berbilang platform (Web, Mobile, Desktop)
+- Integrasi World ID untuk keselamatan yang lebih baik
+- Sistem pengedaran Airdrop
+- Integrasi Payment Gateway
+- Pengurusan Lightning Node
 
 ---
 
-## Русский
+### Bahasa Indonesia (Indonesian Documentation)
+**LiMeiHua Taproot Assets** adalah platform infrastruktur keuangan modern yang dirancang untuk mendukung aliran uang besar untuk Nenek LiMeiHua. Sistem komprehensif ini memungkinkan pengguna membuat, mengelola, dan memperdagangkan token Taproot Assets di Jaringan Bitcoin Lightning.
 
-### Обзор
-
-LiMeiHua Taproot Airdrop Zone - это система распределения эирдропов, которая позволяет администраторам легко распределять токены Taproot Assets пользователям через сеть Lightning.
-
-### Основные возможности
-
-- 🎁 **Пакетное распределение** - Распределение нескольким пользователям одновременно
-- 👤 **Система претензий пользователей** - Пользователи могут требовать свой эирдроп
-- 📊 **Панель администратора** - Легкое управление кампаниями
-- ⚡ **Сеть Lightning** - Быстрое распределение через Lightning
-- 🔒 **Безопасность** - Система проверки и подтверждения
-- 📱 **Адаптивный дизайн** - Работает на мобильных устройствах и ПК
-
-### Установка
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Использование
-
-**Для администраторов:**
-1. Войдите с email/паролем
-2. Создать новую кампанию
-3. Загрузить CSV получателей
-4. Система распределяет эирдроп
-
-**Для пользователей:**
-1. Выбрать кампанию
-2. Ввести адрес Bitcoin
-3. Нажать "Проверить право"
-4. Нажать "Требовать эирдроп"
+**Fitur Utama:**
+- Buat token Taproot Assets yang dapat disesuaikan
+- Kelola pasokan token (tetap, dapat dicetak, dapat dibakar)
+- Hitung biaya gas dan biaya transaksi
+- Kirim dan terima token di Jaringan Lightning
+- Dukungan multi-platform (Web, Mobile, Desktop)
+- Integrasi World ID untuk keamanan yang lebih baik
+- Sistem distribusi Airdrop
+- Integrasi Payment Gateway
+- Manajemen Lightning Node
 
 ---
 
-## العربية
+### Filipino (Filipino Documentation)
+**LiMeiHua Taproot Assets** ay isang modernong platform ng financial infrastructure na dinisenyo upang suportahan ang malaking daloy ng pera para sa LiMeiHua Grand Mother. Ang komprehensibong sistemang ito ay nagbibigay-daan sa mga user na lumikha, pamahalaan, at magbenta ng Taproot Assets tokens sa Bitcoin Lightning Network.
 
-### نظرة عامة
-
-LiMeiHua Taproot Airdrop Zone هو نظام توزيع الهدايا الجوية الذي يسمح للمسؤولين بتوزيع رموز Taproot Assets بسهولة على المستخدمين عبر شبكة Lightning.
-
-### الميزات الرئيسية
-
-- 🎁 **التوزيع الجماعي** - التوزيع على عدة مستخدمين في وقت واحد
-- 👤 **نظام مطالبة المستخدمين** - يمكن للمستخدمين المطالبة بهديتهم الجوية
-- 📊 **لوحة تحكم الإدارة** - إدارة الحملات بسهولة
-- ⚡ **شبكة Lightning** - التوزيع السريع عبر Lightning
-- 🔒 **آمن** - نظام التحقق والتأكيد
-- 📱 **سريع الاستجابة** - يعمل على الأجهزة المحمولة وأجهزة سطح المكتب
-
-### التثبيت
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### الاستخدام
-
-**للمسؤولين:**
-1. تسجيل الدخول بالبريد الإلكتروني/كلمة المرور
-2. إنشاء حملة جديدة
-3. تحميل CSV للمستقبلين
-4. يوزع النظام الهدية الجوية
-
-**للمستخدمين:**
-1. اختيار حملة
-2. إدخال عنوان Bitcoin
-3. انقر على "التحقق من الأهلية"
-4. انقر على "المطالبة بالهدية الجوية"
+**Pangunahing Mga Katangian:**
+- Lumikha ng mga customized Taproot Assets tokens
+- Pamahalaan ang supply ng token (fixed, mintable, burnable)
+- Kalkulahin ang gas fees at transaction costs
+- Magpadala at makatanggap ng tokens sa Lightning Network
+- Suporta sa maraming platform (Web, Mobile, Desktop)
+- Pagsasama ng World ID para sa mas magandang seguridad
+- Sistema ng Airdrop distribution
+- Pagsasama ng Payment Gateway
+- Pamamahala ng Lightning Node
 
 ---
 
-## हिन्दी
+### தமிழ் (Tamil Documentation)
+**LiMeiHua Taproot Assets** என்பது LiMeiHua Grand Mother க்கான பெரிய பணப்புழக்கத்தை ஆதரிக்க வடிவமைக்கப்பட்ட ஒரு நவீன நிதி உள்கட்டமைப்பு தளம். இந்த விரிவான அமைப்பு பயனர்களை Taproot Assets டோக்கன்களை உருவாக்க, நிர்வகிக்க மற்றும் Bitcoin Lightning Network இல் வர்த்தகம் செய்ய அனுமதிக்கிறது.
 
-### अवलोकन
-
-LiMeiHua Taproot Airdrop Zone एक एयरड्रॉप वितरण प्रणाली है जो प्रशासकों को लाइटनिंग नेटवर्क के माध्यम से उपयोगकर्ताओं को Taproot Assets टोकन आसानी से वितरित करने की अनुमति देती है।
-
-### मुख्य विशेषताएं
-
-- 🎁 **बैच वितरण** - एक साथ कई उपयोगकर्ताओं को वितरित करें
-- 👤 **उपयोगकर्ता दावा प्रणाली** - उपयोगकर्ता अपना एयरड्रॉप दावा कर सकते हैं
-- 📊 **व्यवस्थापक डैशबोर्ड** - आसान अभियान प्रबंधन
-- ⚡ **लाइटनिंग नेटवर्क** - लाइटनिंग के माध्यम से तेजी से वितरण
-- 🔒 **सुरक्षित** - सत्यापन और पुष्टि प्रणाली
-- 📱 **उत्तरदायी** - मोबाइल और डेस्कटॉप पर काम करता है
-
-### स्थापन
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### उपयोग
-
-**प्रशासकों के लिए:**
-1. ईमेल/पासवर्ड से लॉगिन करें
-2. नया अभियान बनाएं
-3. प्राप्तकर्ताओं की CSV अपलोड करें
-4. सिस्टम एयरड्रॉप वितरित करता है
-
-**उपयोगकर्ताओं के लिए:**
-1. अभियान चुनें
-2. Bitcoin पता दर्ज करें
-3. "पात्रता जांचें" पर क्लिक करें
-4. "एयरड्रॉप दावा करें" पर क्लिक करें
+**முக்கிய அம்சங்கள்:**
+- தனிப்பயனாக்கப்பட்ட Taproot Assets டோக்கன்களை உருவாக்கவும்
+- டோக்கன் விநியோகத்தை நிர்வகிக்கவும் (நிலையான, மிண்டபல், எரியக்கூடிய)
+- வாயு கட்டணம் மற்றும் பரிவர்த்தனை செலவுகளைக் கணக்கிடவும்
+- Lightning Network இல் டோக்கன்களை அனுப்பி பெறவும்
+- பல-தளம் ஆதரவு (Web, Mobile, Desktop)
+- சிறந்த பாதுகாப்பிற்கான World ID ஒருங்கிணைப்பு
+- Airdrop விநியோக அமைப்பு
+- Payment Gateway ஒருங்கிணைப்பு
+- Lightning Node நிர்வாகம்
 
 ---
 
-## Tiếng Việt
+### Русский (Russian Documentation)
+**LiMeiHua Taproot Assets** - это современная платформа финансовой инфраструктуры, разработанная для поддержки огромного потока денежных средств для бабушки LiMeiHua. Эта комплексная система позволяет пользователям создавать, управлять и торговать токенами Taproot Assets в сети Bitcoin Lightning Network.
 
-### Tổng Quan
-
-LiMeiHua Taproot Airdrop Zone là một hệ thống phân phối airdrop cho phép các quản trị viên dễ dàng phân phối mã thông báo Taproot Assets cho người dùng thông qua Mạng Lightning.
-
-### Các Tính Năng Chính
-
-- 🎁 **Phân phối theo Lô** - Phân phối cho nhiều người dùng cùng một lúc
-- 👤 **Hệ thống Yêu cầu Người dùng** - Người dùng có thể yêu cầu airdrop của họ
-- 📊 **Bảng Điều khiển Quản trị** - Quản lý chiến dịch dễ dàng
-- ⚡ **Mạng Lightning** - Phân phối nhanh qua Lightning
-- 🔒 **An toàn** - Hệ thống xác minh và xác nhận
-- 📱 **Đáp Ứng** - Hoạt động trên thiết bị di động và máy tính để bàn
-
-### Cài Đặt
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Cách Sử Dụng
-
-**Cho Quản trị viên:**
-1. Đăng nhập bằng email/mật khẩu
-2. Tạo chiến dịch mới
-3. Tải lên CSV của người nhận
-4. Hệ thống phân phối airdrop
-
-**Cho Người dùng:**
-1. Chọn chiến dịch
-2. Nhập địa chỉ Bitcoin
-3. Nhấp vào "Kiểm tra Tư cách"
-4. Nhấp vào "Yêu cầu Airdrop"
+**Основные возможности:**
+- Создание пользовательских токенов Taproot Assets
+- Управление предложением токенов (фиксированное, чеканка, сжигание)
+- Расчет комиссий за газ и стоимости транзакций
+- Отправка и получение токенов в сети Lightning Network
+- Поддержка нескольких платформ (Web, Mobile, Desktop)
+- Интеграция World ID для повышенной безопасности
+- Система распределения Airdrop
+- Интеграция Payment Gateway
+- Управление узлом Lightning
 
 ---
 
-## Bahasa Indonesia
+### हिन्दी (Hindi Documentation)
+**LiMeiHua Taproot Assets** एक आधुनिक वित्तीय बुनियादी ढांचा मंच है जो LiMeiHua Grand Mother के लिए भारी मात्रा में धन प्रवाह का समर्थन करने के लिए डिज़ाइन किया गया है। यह व्यापक प्रणाली उपयोगकर्ताओं को Taproot Assets टोकन बनाने, प्रबंधित करने और Bitcoin Lightning Network पर व्यापार करने की अनुमति देती है।
 
-### Ikhtisar
-
-LiMeiHua Taproot Airdrop Zone adalah sistem distribusi airdrop yang memungkinkan administrator dengan mudah mendistribusikan token Taproot Assets kepada pengguna melalui Jaringan Lightning.
-
-### Fitur Utama
-
-- 🎁 **Distribusi Batch** - Distribusikan ke beberapa pengguna sekaligus
-- 👤 **Sistem Klaim Pengguna** - Pengguna dapat mengklaim airdrop mereka
-- 📊 **Dasbor Admin** - Manajemen kampanye yang mudah
-- ⚡ **Jaringan Lightning** - Distribusi cepat melalui Lightning
-- 🔒 **Aman** - Sistem verifikasi dan konfirmasi
-- 📱 **Responsif** - Bekerja di perangkat seluler dan desktop
-
-### Instalasi
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Penggunaan
-
-**Untuk Admin:**
-1. Masuk dengan email/sandi
-2. Buat kampanye baru
-3. Unggah CSV penerima
-4. Sistem mendistribusikan airdrop
-
-**Untuk Pengguna:**
-1. Pilih kampanye
-2. Masukkan alamat Bitcoin
-3. Klik "Periksa Kelayakan"
-4. Klik "Klaim Airdrop"
+**मुख्य विशेषताएं:**
+- कस्टमाइज़्ड Taproot Assets टोकन बनाएं
+- टोकन आपूर्ति प्रबंधित करें (निश्चित, मिंटेबल, बर्नेबल)
+- गैस शुल्क और लेनदेन लागत की गणना करें
+- Lightning Network पर टोकन भेजें और प्राप्त करें
+- मल्टी-प्लेटफॉर्म समर्थन (Web, Mobile, Desktop)
+- बेहतर सुरक्षा के लिए World ID एकीकरण
+- Airdrop वितरण प्रणाली
+- Payment Gateway एकीकरण
+- Lightning Node प्रबंधन
 
 ---
 
-## Bahasa Melayu
+### 中文 (Chinese Simplified Documentation)
+**LiMeiHua Taproot Assets** 是一个现代金融基础设施平台，旨在为李美华奶奶支持大规模资金流动。这个综合系统使用户能够在比特币闪电网络上创建、管理和交易 Taproot Assets 代币。
 
-### Gambaran Keseluruhan
-
-LiMeiHua Taproot Airdrop Zone adalah sistem pengedaran airdrop yang membolehkan pentadbir dengan mudah mengagihkan token Taproot Assets kepada pengguna melalui Rangkaian Lightning.
-
-### Ciri-Ciri Utama
-
-- 🎁 **Pengedaran Batch** - Agihkan kepada beberapa pengguna sekaligus
-- 👤 **Sistem Tuntutan Pengguna** - Pengguna boleh menuntut airdrop mereka
-- 📊 **Papan Pemuka Pentadbir** - Pengurusan kempen yang mudah
-- ⚡ **Rangkaian Lightning** - Pengedaran cepat melalui Lightning
-- 🔒 **Selamat** - Sistem pengesahan dan pengesahan
-- 📱 **Responsif** - Berfungsi pada peranti mudah alih dan desktop
-
-### Pemasangan
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Penggunaan
-
-**Untuk Admin:**
-1. Masuk dengan email/kata laluan
-2. Buat kempen baru
-3. Muat naik CSV penerima
-4. Sistem mengagihkan airdrop
-
-**Untuk Pengguna:**
-1. Pilih kempen
-2. Masukkan alamat Bitcoin
-3. Klik "Semak Kelayakan"
-4. Klik "Tuntut Airdrop"
+**主要功能：**
+- 创建自定义 Taproot Assets 代币
+- 管理代币供应（固定、可铸造、可销毁）
+- 计算燃气费和交易成本
+- 在闪电网络上发送和接收代币
+- 多平台支持（Web、Mobile、Desktop）
+- World ID 集成以增强安全性
+- Airdrop 分发系统
+- Payment Gateway 集成
+- Lightning Node 管理
 
 ---
 
-## Türkçe
+### 日本語 (Japanese Documentation)
+**LiMeiHua Taproot Assets** は、李美華おばあちゃんのための大規模な資金流を支援するために設計された最新の金融インフラストラクチャプラットフォームです。この包括的なシステムにより、ユーザーはビットコインライトニングネットワーク上で Taproot Assets トークンを作成、管理、および取引できます。
 
-### Genel Bakış
-
-LiMeiHua Taproot Airdrop Zone, yöneticilerin Lightning Network aracılığıyla Taproot Assets jetonlarını kullanıcılara kolayca dağıtmasına olanak sağlayan bir airdrop dağıtım sistemidir.
-
-### Temel Özellikler
-
-- 🎁 **Toplu Dağıtım** - Aynı anda birden fazla kullanıcıya dağıtım
-- 👤 **Kullanıcı Talep Sistemi** - Kullanıcılar airdroplarını talep edebilir
-- 📊 **Yönetici Paneli** - Kolay kampanya yönetimi
-- ⚡ **Lightning Network** - Lightning aracılığıyla hızlı dağıtım
-- 🔒 **Güvenli** - Doğrulama ve onay sistemi
-- 📱 **Duyarlı** - Mobil ve masaüstü cihazlarda çalışır
-
-### Kurulum
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Kullanım
-
-**Yöneticiler İçin:**
-1. E-posta/şifre ile giriş yapın
-2. Yeni kampanya oluşturun
-3. Alıcıların CSV'sini yükleyin
-4. Sistem airdrop dağıtır
-
-**Kullanıcılar İçin:**
-1. Kampanya seçin
-2. Bitcoin adresini girin
-3. "Uygunluğu Kontrol Et" seçeneğine tıklayın
-4. "Airdrop Talep Et" seçeneğine tıklayın
+**主な機能：**
+- カスタマイズされた Taproot Assets トークンを作成
+- トークン供給を管理（固定、ミント可能、バーン可能）
+- ガス代と取引コストを計算
+- ライトニングネットワークでトークンを送受信
+- マルチプラットフォーム対応（Web、Mobile、Desktop）
+- セキュリティ強化のための World ID 統合
+- Airdrop 配布システム
+- Payment Gateway 統合
+- Lightning Node 管理
 
 ---
 
-## Italiano
+### 한국어 (Korean Documentation)
+**LiMeiHua Taproot Assets** 는 이미화 할머니를 위한 대규모 자금 흐름을 지원하기 위해 설계된 현대적 금융 인프라 플랫폼입니다. 이 포괄적인 시스템을 통해 사용자는 비트코인 라이트닝 네트워크에서 Taproot Assets 토큰을 생성, 관리 및 거래할 수 있습니다.
 
-### Panoramica
-
-LiMeiHua Taproot Airdrop Zone è un sistema di distribuzione di airdrop che consente agli amministratori di distribuire facilmente token Taproot Assets agli utenti tramite la Rete Lightning.
-
-### Caratteristiche Principali
-
-- 🎁 **Distribuzione in Batch** - Distribuisci a più utenti contemporaneamente
-- 👤 **Sistema di Reclamo Utenti** - Gli utenti possono richiedere il loro airdrop
-- 📊 **Pannello di Amministrazione** - Gestione facile delle campagne
-- ⚡ **Rete Lightning** - Distribuzione veloce tramite Lightning
-- 🔒 **Sicuro** - Sistema di verifica e conferma
-- 📱 **Reattivo** - Funziona su dispositivi mobili e desktop
-
-### Installazione
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Utilizzo
-
-**Per Amministratori:**
-1. Accedi con email/password
-2. Crea una nuova campagna
-3. Carica CSV dei destinatari
-4. Il sistema distribuisce l'airdrop
-
-**Per Utenti:**
-1. Seleziona una campagna
-2. Inserisci l'indirizzo Bitcoin
-3. Fai clic su "Verifica Idoneità"
-4. Fai clic su "Richiedi Airdrop"
+**주요 기능:**
+- 맞춤형 Taproot Assets 토큰 생성
+- 토큰 공급 관리 (고정, 발행 가능, 소각 가능)
+- 가스 수수료 및 거래 비용 계산
+- 라이트닝 네트워크에서 토큰 송수신
+- 다중 플랫폼 지원 (Web, Mobile, Desktop)
+- 향상된 보안을 위한 World ID 통합
+- Airdrop 배포 시스템
+- Payment Gateway 통합
+- Lightning Node 관리
 
 ---
 
-## Nederlands
+### Español (Spanish Documentation)
+**LiMeiHua Taproot Assets** es una plataforma moderna de infraestructura financiera diseñada para apoyar el flujo masivo de dinero para la abuela LiMeiHua. Este sistema integral permite a los usuarios crear, gestionar e intercambiar tokens Taproot Assets en la red Bitcoin Lightning Network.
 
-### Overzicht
-
-LiMeiHua Taproot Airdrop Zone is een airdrop-distributiesysteem waarmee beheerders gemakkelijk Taproot Assets-tokens aan gebruikers kunnen distribueren via het Lightning Network.
-
-### Hoofdfuncties
-
-- 🎁 **Batch-distributie** - Distribueer tegelijk naar meerdere gebruikers
-- 👤 **Gebruikersclaimsysteem** - Gebruikers kunnen hun airdrop claimen
-- 📊 **Beheerdashboard** - Eenvoudig campagnebeheer
-- ⚡ **Lightning Network** - Snelle distributie via Lightning
-- 🔒 **Veilig** - Verificatie- en bevestigingssysteem
-- 📱 **Responsief** - Werkt op mobiele apparaten en desktops
-
-### Installatie
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Gebruik
-
-**Voor Beheerders:**
-1. Meld u aan met e-mail/wachtwoord
-2. Maak een nieuwe campagne
-3. Upload CSV van ontvangers
-4. Systeem distribueert airdrop
-
-**Voor Gebruikers:**
-1. Selecteer een campagne
-2. Voer Bitcoin-adres in
-3. Klik op "Geschiktheid controleren"
-4. Klik op "Airdrop claimen"
+**Características principales:**
+- Crear tokens Taproot Assets personalizados
+- Gestionar el suministro de tokens (fijo, acuñable, quemable)
+- Calcular tarifas de gas y costos de transacción
+- Enviar y recibir tokens en Lightning Network
+- Soporte multiplataforma (Web, Mobile, Desktop)
+- Integración de World ID para mayor seguridad
+- Sistema de distribución de Airdrop
+- Integración de Payment Gateway
+- Gestión de Lightning Node
 
 ---
 
-## Polski
+### Français (French Documentation)
+**LiMeiHua Taproot Assets** est une plateforme d'infrastructure financière moderne conçue pour soutenir le flux massif d'argent pour la grand-mère LiMeiHua. Ce système complet permet aux utilisateurs de créer, gérer et échanger des jetons Taproot Assets sur le réseau Bitcoin Lightning Network.
 
-### Przegląd
-
-LiMeiHua Taproot Airdrop Zone to system dystrybucji airdropów, który umożliwia administratorom łatwe rozpowszechnianie tokenów Taproot Assets użytkownikom za pośrednictwem sieci Lightning.
-
-### Główne Cechy
-
-- 🎁 **Dystrybucja Batch** - Rozpowszechniaj do wielu użytkowników jednocześnie
-- 👤 **System Roszczeń Użytkowników** - Użytkownicy mogą ubiegać się o swój airdrop
-- 📊 **Panel Administracyjny** - Łatwe zarządzanie kampaniami
-- ⚡ **Sieć Lightning** - Szybka dystrybucja przez Lightning
-- 🔒 **Bezpieczne** - System weryfikacji i potwierdzenia
-- 📱 **Responsywne** - Działa na urządzeniach mobilnych i komputerach stacjonarnych
-
-### Instalacja
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Użycie
-
-**Dla Administratorów:**
-1. Zaloguj się za pomocą e-maila/hasła
-2. Utwórz nową kampanię
-3. Prześlij CSV odbiorców
-4. System rozpowszechnia airdrop
-
-**Dla Użytkowników:**
-1. Wybierz kampanię
-2. Wpisz adres Bitcoin
-3. Kliknij "Sprawdź Uprawnienia"
-4. Kliknij "Ubiegaj się o Airdrop"
+**Caractéristiques principales:**
+- Créer des jetons Taproot Assets personnalisés
+- Gérer l'approvisionnement en jetons (fixe, frappable, brûlable)
+- Calculer les frais de gaz et les coûts de transaction
+- Envoyer et recevoir des jetons sur Lightning Network
+- Support multi-plateforme (Web, Mobile, Desktop)
+- Intégration de World ID pour une sécurité renforcée
+- Système de distribution d'Airdrop
+- Intégration de Payment Gateway
+- Gestion des nœuds Lightning
 
 ---
 
-## Svenska
+### Deutsch (German Documentation)
+**LiMeiHua Taproot Assets** ist eine moderne Finanzinfrastruktur-Plattform, die entwickelt wurde, um den massiven Geldfluss für Großmutter LiMeiHua zu unterstützen. Dieses umfassende System ermöglicht es Benutzern, Taproot Assets-Token im Bitcoin Lightning Network zu erstellen, zu verwalten und zu handeln.
 
-### Översikt
-
-LiMeiHua Taproot Airdrop Zone är ett airdrop-distributionssystem som gör det möjligt för administratörer att enkelt distribuera Taproot Assets-tokens till användare via Lightning Network.
-
-### Huvudfunktioner
-
-- 🎁 **Batch-distribution** - Distribuera till flera användare samtidigt
-- 👤 **Användaranspråkssystem** - Användare kan göra anspråk på sin airdrop
-- 📊 **Administrationspanel** - Enkel kampanjhantering
-- ⚡ **Lightning Network** - Snabb distribution via Lightning
-- 🔒 **Säker** - Verifierings- och bekräftelsesystem
-- 📱 **Responsiv** - Fungerar på mobila enheter och datorer
-
-### Installation
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Användning
-
-**För Administratörer:**
-1. Logga in med e-post/lösenord
-2. Skapa en ny kampanj
-3. Ladda upp CSV för mottagare
-4. Systemet distribuerar airdrop
-
-**För Användare:**
-1. Välj en kampanj
-2. Ange Bitcoin-adress
-3. Klicka på "Kontrollera Behörighet"
-4. Klicka på "Gör Anspråk på Airdrop"
+**Hauptmerkmale:**
+- Erstellen Sie benutzerdefinierte Taproot Assets-Token
+- Verwalten Sie das Token-Angebot (fest, prägbar, verbrennbar)
+- Berechnen Sie Gasgebühren und Transaktionskosten
+- Senden und empfangen Sie Token im Lightning Network
+- Multi-Plattform-Unterstützung (Web, Mobile, Desktop)
+- World ID-Integration für erhöhte Sicherheit
+- Airdrop-Verteilungssystem
+- Payment Gateway-Integration
+- Lightning Node-Verwaltung
 
 ---
 
-## Українська
+### Português (Portuguese Documentation)
+**LiMeiHua Taproot Assets** é uma plataforma de infraestrutura financeira moderna projetada para suportar o fluxo massivo de dinheiro para a avó LiMeiHua. Este sistema abrangente permite que os usuários criem, gerenciem e negociem tokens Taproot Assets na rede Bitcoin Lightning Network.
 
-### Огляд
-
-LiMeiHua Taproot Airdrop Zone - це система розповсюдження аирдропів, яка дозволяє адміністраторам легко розповсюджувати токени Taproot Assets користувачам через мережу Lightning.
-
-### Основні Функції
-
-- 🎁 **Пакетне розповсюдження** - Розповсюджуйте кільком користувачам одночасно
-- 👤 **Система претензій користувачів** - Користувачі можуть претендувати на свій аирдроп
-- 📊 **Панель адміністратора** - Легке управління кампаніями
-- ⚡ **Мережа Lightning** - Швидке розповсюдження через Lightning
-- 🔒 **Безпека** - Система перевірки та підтвердження
-- 📱 **Адаптивний дизайн** - Працює на мобільних пристроях і ПК
-
-### Установка
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Використання
-
-**Для адміністраторів:**
-1. Увійдіть з email/паролем
-2. Створіть нову кампанію
-3. Завантажте CSV одержувачів
-4. Система розповсюджує аирдроп
-
-**Для користувачів:**
-1. Виберіть кампанію
-2. Введіть адресу Bitcoin
-3. Натисніть "Перевірити право"
-4. Натисніть "Претендувати на аирдроп"
+**Principais recursos:**
+- Criar tokens Taproot Assets personalizados
+- Gerenciar oferta de tokens (fixo, cunhável, queimável)
+- Calcular taxas de gás e custos de transação
+- Enviar e receber tokens na Lightning Network
+- Suporte multiplataforma (Web, Mobile, Desktop)
+- Integração de World ID para segurança aprimorada
+- Sistema de distribuição de Airdrop
+- Integração de Payment Gateway
+- Gerenciamento de Lightning Node
 
 ---
 
-## Čeština
+### العربية (Arabic Documentation)
+**LiMeiHua Taproot Assets** هي منصة بنية تحتية مالية حديثة مصممة لدعم تدفق أموال ضخم لجدة LiMeiHua. يسمح هذا النظام الشامل للمستخدمين بإنشاء وإدارة وتداول رموز Taproot Assets على شبكة Bitcoin Lightning Network.
 
-### Přehled
-
-LiMeiHua Taproot Airdrop Zone je systém distribuce airdropů, který umožňuje správcům snadno distribuovat tokeny Taproot Assets uživatelům prostřednictvím sítě Lightning.
-
-### Hlavní Funkce
-
-- 🎁 **Dávková Distribuce** - Distribuujte více uživatelům najednou
-- 👤 **Systém Nároku Uživatelů** - Uživatelé mohou nárokovat svůj airdrop
-- 📊 **Správcovský Panel** - Snadná správa kampaní
-- ⚡ **Síť Lightning** - Rychlá distribuce přes Lightning
-- 🔒 **Bezpečné** - Systém ověřování a potvrzení
-- 📱 **Responzivní** - Funguje na mobilních zařízeních a stolních počítačích
-
-### Instalace
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Použití
-
-**Pro Správce:**
-1. Přihlaste se pomocí e-mailu/hesla
-2. Vytvořte novou kampaň
-3. Nahrajte CSV příjemců
-4. Systém distribuuje airdrop
-
-**Pro Uživatele:**
-1. Vyberte kampaň
-2. Zadejte adresu Bitcoin
-3. Klikněte na "Zkontrolovat Způsobilost"
-4. Klikněte na "Nárokovat Airdrop"
+**المميزات الرئيسية:**
+- إنشاء رموز Taproot Assets مخصصة
+- إدارة عرض الرموز (ثابت، قابل للسك، قابل للحرق)
+- حساب رسوم الغاز وتكاليف المعاملات
+- إرسال واستقبال الرموز على Lightning Network
+- دعم متعدد المنصات (Web, Mobile, Desktop)
+- تكامل World ID لأمان محسّن
+- نظام توزيع Airdrop
+- تكامل Payment Gateway
+- إدارة عقدة Lightning
 
 ---
 
-## Română
+### Türkçe (Turkish Documentation)
+**LiMeiHua Taproot Assets**, LiMeiHua Büyükanne için büyük para akışını desteklemek üzere tasarlanmış modern bir finansal altyapı platformudur. Bu kapsamlı sistem, kullanıcıların Bitcoin Lightning Network üzerinde Taproot Assets jetonları oluşturmasına, yönetmesine ve ticaretini yapmasına olanak tanır.
 
-### Prezentare Generală
-
-LiMeiHua Taproot Airdrop Zone este un sistem de distribuție a airdropurilor care permite administratorilor să distribuie cu ușurință tokenuri Taproot Assets utilizatorilor prin rețeaua Lightning.
-
-### Caracteristici Principale
-
-- 🎁 **Distribuție în Lot** - Distribuiți mai multor utilizatori simultan
-- 👤 **Sistem de Revendicare Utilizatori** - Utilizatorii pot revendica airdropul lor
-- 📊 **Tabloul de Bord Administrator** - Gestionare ușoară a campaniilor
-- ⚡ **Rețeaua Lightning** - Distribuție rapidă prin Lightning
-- 🔒 **Sigur** - Sistem de verificare și confirmare
-- 📱 **Responsiv** - Funcționează pe dispozitive mobile și desktop
-
-### Instalare
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Utilizare
-
-**Pentru Administratori:**
-1. Conectați-vă cu email/parolă
-2. Creați o nouă campanie
-3. Încărcați CSV-ul destinatarilor
-4. Sistemul distribuie airdropul
-
-**Pentru Utilizatori:**
-1. Selectați o campanie
-2. Introduceți adresa Bitcoin
-3. Faceți clic pe "Verificați Eligibilitate"
-4. Faceți clic pe "Revendicați Airdrop"
+**Ana Özellikler:**
+- Özelleştirilmiş Taproot Assets jetonları oluşturun
+- Jeton arzını yönetin (sabit, basılabilir, yakılabilir)
+- Gaz ücretleri ve işlem maliyetlerini hesaplayın
+- Lightning Network üzerinde jetonları gönderin ve alın
+- Çok platformlu destek (Web, Mobile, Desktop)
+- Geliştirilmiş güvenlik için World ID entegrasyonu
+- Airdrop dağıtım sistemi
+- Payment Gateway entegrasyonu
+- Lightning Node yönetimi
 
 ---
 
-## Ελληνικά
+### Italiano (Italian Documentation)
+**LiMeiHua Taproot Assets** è una piattaforma di infrastruttura finanziaria moderna progettata per supportare il massiccio flusso di denaro per la nonna LiMeiHua. Questo sistema completo consente agli utenti di creare, gestire e scambiare token Taproot Assets sulla rete Bitcoin Lightning Network.
 
-### Επισκόπηση
-
-LiMeiHua Taproot Airdrop Zone είναι ένα σύστημα διανομής airdrop που επιτρέπει στους διαχειριστές να διανέμουν εύκολα tokenα Taproot Assets στους χρήστες μέσω του δικτύου Lightning.
-
-### Κύρια Χαρακτηριστικά
-
-- 🎁 **Διανομή Παρτίδας** - Διανέμετε σε πολλούς χρήστες ταυτόχρονα
-- 👤 **Σύστημα Αξίωσης Χρήστη** - Οι χρήστες μπορούν να διεκδικήσουν το airdrop τους
-- 📊 **Πίνακας Ελέγχου Διαχειριστή** - Εύκολη διαχείριση εκστρατειών
-- ⚡ **Δίκτυο Lightning** - Γρήγορη διανομή μέσω Lightning
-- 🔒 **Ασφαλές** - Σύστημα επαλήθευσης και επιβεβαίωσης
-- 📱 **Ανταποκρινόμενο** - Λειτουργεί σε κινητές συσκευές και υπολογιστές
-
-### Εγκατάσταση
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Χρήση
-
-**Για Διαχειριστές:**
-1. Συνδεθείτε με email/κωδικό πρόσβασης
-2. Δημιουργήστε νέα εκστρατεία
-3. Ανεβάστε CSV παραληπτών
-4. Το σύστημα διανέμει το airdrop
-
-**Για Χρήστες:**
-1. Επιλέξτε εκστρατεία
-2. Εισάγετε διεύθυνση Bitcoin
-3. Κάντε κλικ στο "Ελέγχος Κατακόρυφης"
-4. Κάντε κλικ στο "Διεκδίκηση Airdrop"
+**Caratteristiche principali:**
+- Crea token Taproot Assets personalizzati
+- Gestisci l'offerta di token (fisso, coniabile, bruciabile)
+- Calcola le commissioni del gas e i costi delle transazioni
+- Invia e ricevi token su Lightning Network
+- Supporto multipiattaforma (Web, Mobile, Desktop)
+- Integrazione di World ID per una sicurezza migliorata
+- Sistema di distribuzione Airdrop
+- Integrazione di Payment Gateway
+- Gestione dei nodi Lightning
 
 ---
 
-## עברית
+### Nederlands (Dutch Documentation)
+**LiMeiHua Taproot Assets** is een modern financieel infrastructuurplatform dat is ontworpen ter ondersteuning van de massale geldstroom voor oma LiMeiHua. Dit uitgebreide systeem stelt gebruikers in staat Taproot Assets-tokens op het Bitcoin Lightning Network te creëren, beheren en verhandelen.
 
-### סקירה כללית
-
-LiMeiHua Taproot Airdrop Zone היא מערכת חלוקת airdrop המאפשרת למנהלים להפיץ בקלות טוקנים של Taproot Assets למשתמשים דרך רשת Lightning.
-
-### תכונות עיקריות
-
-- 🎁 **חלוקה בקבוצות** - הפץ למספר משתמשים בו-זמנית
-- 👤 **מערכת תביעת משתמשים** - משתמשים יכולים לתבוע את ה-airdrop שלהם
-- 📊 **לוח בקרה של מנהל** - ניהול קמפיין קל
-- ⚡ **רשת Lightning** - חלוקה מהירה דרך Lightning
-- 🔒 **בטוח** - מערכת אימות ואישור
-- 📱 **רספונסיבי** - פועל בהתקנים ניידים ובמחשבים שולחניים
-
-### התקנה
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### שימוש
-
-**למנהלים:**
-1. התחברו עם דוא"ל/סיסמה
-2. צרו קמפיין חדש
-3. העלו CSV של מקבלים
-4. המערכת חולקת airdrop
-
-**למשתמשים:**
-1. בחרו קמפיין
-2. הזינו כתובת Bitcoin
-3. לחצו על "בדוק זכאות"
-4. לחצו על "תבעו Airdrop"
+**Hoofdkenmerken:**
+- Maak aangepaste Taproot Assets-tokens
+- Beheer tokenvoorraad (vast, mintable, brandbaar)
+- Bereken gaskosten en transactiekosten
+- Verzend en ontvang tokens op Lightning Network
+- Ondersteuning voor meerdere platforms (Web, Mobile, Desktop)
+- World ID-integratie voor verbeterde beveiliging
+- Airdrop-distributiesysteem
+- Payment Gateway-integratie
+- Lightning Node-beheer
 
 ---
 
-## বাংলা
+### Polski (Polish Documentation)
+**LiMeiHua Taproot Assets** to nowoczesna platforma infrastruktury finansowej zaprojektowana do wspierania masywnego przepływu pieniędzy dla babci LiMeiHua. Ten kompleksowy system umożliwia użytkownikom tworzenie, zarządzanie i handel tokenami Taproot Assets w sieci Bitcoin Lightning Network.
 
-### সংক্ষিপ্ত বিবরণ
-
-LiMeiHua Taproot Airdrop Zone একটি এয়ারড্রপ বিতরণ সিস্টেম যা প্রশাসকদের লাইটনিং নেটওয়ার্কের মাধ্যমে ব্যবহারকারীদের কাছে Taproot Assets টোকেন সহজে বিতরণ করতে দেয়।
-
-### প্রধান বৈশিষ্ট্য
-
-- 🎁 **ব্যাচ বিতরণ** - একসাথে একাধিক ব্যবহারকারীদের বিতরণ করুন
-- 👤 **ব্যবহারকারী দাবি সিস্টেম** - ব্যবহারকারীরা তাদের এয়ারড্রপ দাবি করতে পারে
-- 📊 **প্রশাসক ড্যাশবোর্ড** - সহজ ক্যাম্পেইন ব্যবস্থাপনা
-- ⚡ **লাইটনিং নেটওয়ার্ক** - লাইটনিং এর মাধ্যমে দ্রুত বিতরণ
-- 🔒 **নিরাপদ** - যাচাইকরণ এবং নিশ্চিতকরণ সিস্টেম
-- 📱 **প্রতিক্রিয়াশীল** - মোবাইল এবং ডেস্কটপ ডিভাইসে কাজ করে
-
-### ইনস্টলেশন
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### ব্যবহার
-
-**প্রশাসকদের জন্য:**
-1. ইমেল/পাসওয়ার্ড দিয়ে লগইন করুন
-2. নতুন ক্যাম্পেইন তৈরি করুন
-3. প্রাপকদের CSV আপলোড করুন
-4. সিস্টেম এয়ারড্রপ বিতরণ করে
-
-**ব্যবহারকারীদের জন্য:**
-1. ক্যাম্পেইন নির্বাচন করুন
-2. Bitcoin ঠিকানা প্রবেশ করুন
-3. "যোগ্যতা পরীক্ষা করুন" ক্লিক করুন
-4. "এয়ারড্রপ দাবি করুন" ক্লিক করুন
+**Główne cechy:**
+- Twórz dostosowane tokeny Taproot Assets
+- Zarządzaj podażą tokenów (stała, możliwa do wybicia, możliwa do spalenia)
+- Oblicz opłaty za gaz i koszty transakcji
+- Wysyłaj i odbieraj tokeny w sieci Lightning Network
+- Obsługa wielu platform (Web, Mobile, Desktop)
+- Integracja World ID w celu zwiększonego bezpieczeństwa
+- System dystrybucji Airdrop
+- Integracja Payment Gateway
+- Zarządzanie węzłem Lightning
 
 ---
 
-## Filipino
+### Svenska (Swedish Documentation)
+**LiMeiHua Taproot Assets** är en modern finansiell infrastrukturplattform utformad för att stödja massiv penningflöde för mormor LiMeiHua. Detta omfattande system gör det möjligt för användare att skapa, hantera och handla Taproot Assets-tokens på Bitcoin Lightning Network.
 
-### Pangkalahatang Paglalarawan
-
-LiMeiHua Taproot Airdrop Zone ay isang sistema ng distribusyon ng airdrop na nagbibigay-daan sa mga administrator na madaling maghatid ng mga token ng Taproot Assets sa mga user sa pamamagitan ng Lightning Network.
-
-### Pangunahing Mga Tampok
-
-- 🎁 **Batch Distribution** - Maghatid sa maraming user nang sabay-sabay
-- 👤 **User Claim System** - Ang mga user ay maaaring mag-claim ng kanilang airdrop
-- 📊 **Admin Dashboard** - Madaling pamamahala ng kampanya
-- ⚡ **Lightning Network** - Mabilis na distribusyon sa pamamagitan ng Lightning
-- 🔒 **Secure** - Verification at confirmation system
-- 📱 **Responsive** - Gumagana sa mobile at desktop devices
-
-### Pag-install
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Paggamit
-
-**Para sa Mga Administrator:**
-1. Magpasok gamit ang email/password
-2. Lumikha ng bagong kampanya
-3. I-upload ang CSV ng mga tumatanggap
-4. Ang sistema ay naghahatid ng airdrop
-
-**Para sa Mga User:**
-1. Pumili ng kampanya
-2. Ipasok ang Bitcoin address
-3. I-click ang "Suriin ang Pagiging Karapat-dapat"
-4. I-click ang "Mag-claim ng Airdrop"
+**Huvudfunktioner:**
+- Skapa anpassade Taproot Assets-tokens
+- Hantera tokenutbud (fast, präglingsbar, bränbar)
+- Beräkna gasavgifter och transaktionskostnader
+- Skicka och ta emot tokens på Lightning Network
+- Stöd för flera plattformar (Web, Mobile, Desktop)
+- World ID-integration för förbättrad säkerhet
+- Airdrop-distributionssystem
+- Payment Gateway-integration
+- Lightning Node-hantering
 
 ---
 
-## Kiswahili
+### Українська (Ukrainian Documentation)
+**LiMeiHua Taproot Assets** - це сучасна платформа фінансової інфраструктури, розроблена для підтримки масивного потоку грошей для бабусі LiMeiHua. Ця комплексна система дозволяє користувачам створювати, керувати та торгувати токенами Taproot Assets у мережі Bitcoin Lightning Network.
 
-### Muhtasari
-
-LiMeiHua Taproot Airdrop Zone ni mfumo wa kusambaza airdrop unaoweza kuruhusu waongozaji kusambaza kwa urahisi tokeni za Taproot Assets kwa watumiaji kupitia Mtandao wa Lightning.
-
-### Sifa Kuu
-
-- 🎁 **Kusambaza kwa Batch** - Sambaza kwa watumiaji wengi kwa wakati mmoja
-- 👤 **Mfumo wa Madai ya Watumiaji** - Watumiaji wanaweza kuomba airdrop yao
-- 📊 **Dashibodi ya Msimamizi** - Usimamizi wa kampeni unaofanya kazi
-- ⚡ **Mtandao wa Lightning** - Kusambaza haraka kupitia Lightning
-- 🔒 **Salama** - Mfumo wa uthibitisho na uthibitisho
-- 📱 **Inayojibu** - Inafanya kazi kwenye simu na kompyuta za mezani
-
-### Uongozaji
-
-```bash
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-npm install
-cp .env.example .env
-npm run dev
-```
-
-### Matumizi
-
-**Kwa Waongozaji:**
-1. Ingia kwa kutumia barua pepe/neno la siri
-2. Tengeneza kampeni mpya
-3. Pakia CSV ya wapokeaji
-4. Mfumo unasambaza airdrop
-
-**Kwa Watumiaji:**
-1. Chagua kampeni
-2. Ingiza anwani ya Bitcoin
-3. Bofya "Angalia Ustahili"
-4. Bofya "Omba Airdrop"
+**Основні функції:**
+- Створюйте спеціалізовані токени Taproot Assets
+- Керуйте пропозицією токенів (фіксована, карбована, спалювана)
+- Обчислюйте комісії за газ та вартість транзакцій
+- Надсилайте та отримуйте токени в мережі Lightning Network
+- Підтримка кількох платформ (Web, Mobile, Desktop)
+- Інтеграція World ID для посиленої безпеки
+- Система розповсюдження Airdrop
+- Інтеграція Payment Gateway
+- Управління вузлом Lightning
 
 ---
 
-## 📁 Project Structure
+### Čeština (Czech Documentation)
+**LiMeiHua Taproot Assets** je moderní platforma finanční infrastruktury navržená tak, aby podporovala masivní tok peněz pro babičku LiMeiHua. Tento komplexní systém umožňuje uživatelům vytvářet, spravovat a obchodovat s tokeny Taproot Assets v síti Bitcoin Lightning Network.
 
-```
-limeihua-taproot-airdrop-zone/
-├── backend/
-│   ├── server.js                  # Express server with API routes
-│   ├── scripts/
-│   │   └── seed-db.js            # Database seeding script
-│   └── tests/
-│       └── api.test.js           # API tests
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx               # Main React component
-│   │   └── App.css               # Cyberpunk styles
-│   ├── public/
-│   │   └── index.html            # HTML template
-│   └── package.json              # Frontend dependencies
-├── .env.example                   # Environment variables template
-├── package.json                   # Backend dependencies
-├── README.md                      # This file
-└── LICENSE                        # MIT License
-```
+**Hlavní funkce:**
+- Vytvářejte přizpůsobené tokeny Taproot Assets
+- Spravujte nabídku tokenů (pevná, razitelná, spalitelná)
+- Vypočítejte poplatky za plyn a náklady na transakce
+- Odesílajte a přijímejte tokeny v síti Lightning Network
+- Podpora více platforem (Web, Mobile, Desktop)
+- Integrace World ID pro zvýšenou bezpečnost
+- Systém distribuce Airdrop
+- Integrace Payment Gateway
+- Správa uzlu Lightning
 
 ---
 
-## 🚀 Quick Start
+### Română (Romanian Documentation)
+**LiMeiHua Taproot Assets** este o platformă modernă de infrastructură financiară concepută pentru a sprijini fluxul masiv de bani pentru bunica LiMeiHua. Acest sistem cuprinzător permite utilizatorilor să creeze, să gestioneze și să tranzacționeze jetoane Taproot Assets pe rețeaua Bitcoin Lightning Network.
 
-```bash
-# Clone repository
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone.git
-cd limeihua-taproot-airdrop-zone
-
-# Install dependencies
-npm install
-
-# Setup environment
-cp .env.example .env
-# Edit .env with your configuration
-
-# Start development server
-npm run dev
-
-# Run tests
-npm test
-```
+**Caracteristici principale:**
+- Creați jetoane Taproot Assets personalizate
+- Gestionați oferta de jetoane (fix, mintabil, ardibil)
+- Calculați taxele de gaz și costurile tranzacțiilor
+- Trimiteți și primiți jetoane pe Lightning Network
+- Suport multi-platformă (Web, Mobile, Desktop)
+- Integrare World ID pentru securitate îmbunătățită
+- Sistem de distribuție Airdrop
+- Integrare Payment Gateway
+- Gestionarea nodului Lightning
 
 ---
 
-## 📝 API Endpoints
+### Ελληνικά (Greek Documentation)
+**LiMeiHua Taproot Assets** είναι μια σύγχρονη πλατφόρμα χρηματοοικονομικής υποδομής σχεδιασμένη για να υποστηρίξει τη μαζική ροή χρημάτων για τη γιαγιά LiMeiHua. Αυτό το ολοκληρωμένο σύστημα επιτρέπει στους χρήστες να δημιουργούν, να διαχειρίζονται και να διαπραγματεύονται tokens Taproot Assets στο δίκτυο Bitcoin Lightning Network.
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/health` | Health check |
-| POST | `/api/admin/login` | Admin login |
-| POST | `/api/admin/campaigns/create` | Create campaign |
-| POST | `/api/admin/campaigns/:campaignId/batch-upload` | Batch upload recipients |
-| GET | `/api/admin/campaigns/:campaignId` | Get campaign details |
-| GET | `/api/admin/campaigns` | List all campaigns |
-| GET | `/api/campaigns/:campaignId/check-eligibility` | Check eligibility |
-| POST | `/api/campaigns/:campaignId/claim` | Claim airdrop |
-| GET | `/api/user/claims/:address` | Get user claims |
-| GET | `/api/campaigns` | List active campaigns |
-| GET | `/api/stats` | Get global statistics |
+**Κύρια χαρακτηριστικά:**
+- Δημιουργήστε προσαρμοσμένα tokens Taproot Assets
+- Διαχειριστείτε την προσφορά tokens (σταθερή, κόπιμη, καύσιμη)
+- Υπολογίστε τα τέλη αερίου και τα κόστη συναλλαγών
+- Στείλτε και λάβετε tokens στο Lightning Network
+- Υποστήριξη πολλαπλών πλατφορμών (Web, Mobile, Desktop)
+- Ενσωμάτωση World ID για ενισχυμένη ασφάλεια
+- Σύστημα διανομής Airdrop
+- Ενσωμάτωση Payment Gateway
+- Διαχείριση κόμβου Lightning
 
 ---
 
-## 📝 License
+### עברית (Hebrew Documentation)
+**LiMeiHua Taproot Assets** היא פלטפורמת תשתית פיננסית מודרנית שתוכננה לתמוך בזרימת כספים거대ית לסבתא LiMeiHua. מערכת זו המקיפה מאפשרת למשתמשים ליצור, לנהל ולסחור בטוקנים של Taproot Assets ברשת Bitcoin Lightning Network.
 
-MIT License - See [LICENSE](LICENSE) file for details
+**תכונות עיקריות:**
+- יצירת טוקנים מותאמים של Taproot Assets
+- ניהול היצע של טוקנים (קבוע, שניתן לטבוע, שניתן לשרוף)
+- חישוב דמי גז וביצוע עלויות עסקה
+- שליחה וקבלת טוקנים ברשת Lightning Network
+- תמיכה בפלטפורמות מרובות (Web, Mobile, Desktop)
+- שילוב World ID לאבטחה משופרת
+- מערכת הפצה של Airdrop
+- שילוב Payment Gateway
+- ניהול צומת Lightning
 
 ---
 
-## 👨‍💻 Author
+### বাংলা (Bengali Documentation)
+**LiMeiHua Taproot Assets** একটি আধুনিক আর্থিক অবকাঠামো প্ল্যাটফর্ম যা লীমেইহুয়া দাদির জন্য বিশাল অর্থ প্রবাহ সমর্থন করার জন্য ডিজাইন করা হয়েছে। এই ব্যাপক সিস্টেম ব্যবহারকারীদের বিটকয়েন লাইটনিং নেটওয়ার্কে ট্যাপরুট অ্যাসেট টোকেন তৈরি, পরিচালনা এবং বাণিজ্য করতে সক্ষম করে।
 
-**Mr. Kanutsanan Pongpanna** (นายคณัสนันท์ พงษ์พันนา)
-
-Dedicated to **LiMeiHua Grand Mother** (ท่านผู้เฒ่าหลี่เหมยฮัว)
+**প্রধান বৈশিষ্ট্য:**
+- কাস্টমাইজড ট্যাপরুট অ্যাসেট টোকেন তৈরি করুন
+- টোকেন সরবরাহ পরিচালনা করুন (স্থির, মিন্টেবল, বার্নেবল)
+- গ্যাস ফি এবং লেনদেন খরচ গণনা করুন
+- লাইটনিং নেটওয়ার্কে টোকেন পাঠান এবং গ্রহণ করুন
+- মাল্টি-প্ল্যাটফর্ম সমর্থন (Web, Mobile, Desktop)
+- উন্নত নিরাপত্তার জন্য World ID ইন্টিগ্রেশন
+- এয়ারড্রপ বিতরণ সিস্টেম
+- পেমেন্ট গেটওয়ে ইন্টিগ্রেশন
+- লাইটনিং নোড ম্যানেজমেন্ট
 
 ---
 
-**Repository:** [GitHub](https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-Zone)
+### Kiswahili (Swahili Documentation)
+**LiMeiHua Taproot Assets** ni jukwaa la miundombinu ya fedha ya kisasa iliyoundwa kusaidia mtiririko mkubwa wa pesa kwa Nyanya LiMeiHua. Mfumo huu wa kina unaweza kuwezesha watumiaji kuunda, kudhibiti, na kuokolea tokens za Taproot Assets kwenye mtandao wa Bitcoin Lightning Network.
 
-**Version:** 1.0.0
+**Sifa kuu:**
+- Kuunda tokens za Taproot Assets zilizobadilishwa
+- Kudhibiti usambazaji wa tokens (imara, inayoweza kusambazwa, inayoweza kuchoma)
+- Kuhesabu ada za gesi na gharama za miamala
+- Kutuma na kupokea tokens kwenye Lightning Network
+- Usaidizi wa jukwaa nyingi (Web, Mobile, Desktop)
+- Ujumuishaji wa World ID kwa usalama ulioboreswa
+- Mfumo wa usambazaji wa Airdrop
+- Ujumuishaji wa Payment Gateway
+- Usimamizi wa nodi ya Lightning
 
-**Last Updated:** 2026-03-14
+---
+
+## 🎯 Project Overview
+
+This comprehensive project suite provides complete solutions for:
+
+1. **Token Creation & Management** - Create and manage Taproot Assets tokens
+2. **Payment Processing** - Accept payments in BTC, USDT, and custom tokens
+3. **Airdrop Distribution** - Distribute tokens to multiple recipients
+4. **Wallet Solutions** - Multi-platform wallet support
+5. **Bridge Services** - Connect ERC-20 and Taproot Assets
+6. **Node Management** - Operate Lightning Network nodes
+
+---
+
+## ✨ Features
+
+- ✅ 40+ Language Support
+- ✅ Multi-Platform (Web, Mobile, Desktop)
+- ✅ Lightning Network Integration
+- ✅ World ID Verification
+- ✅ Taproot Assets Protocol
+- ✅ Payment Gateway
+- ✅ Airdrop System
+- ✅ Node Management
+- ✅ Bridge Services
+- ✅ Real-time Updates
+
+---
+
+## 🚀 Getting Started
+
+1. Choose your preferred platform (Web, Mobile, or Desktop)
+2. Connect your Lightning Network wallet
+3. Create your first Taproot Assets token
+4. Start managing your digital assets
+5. Explore advanced features like airdrops and payment processing
+
+---
+
+## 💡 Use Cases
+
+- Token creation for projects
+- Payment processing for e-commerce
+- Airdrop campaigns
+- Wallet management
+- Cross-chain token bridging
+- Lightning Network node operation
+
+---
+
+## 🔧 Technical Stack
+
+- **Frontend:** React, Next.js, React Native, Electron
+- **Backend:** Node.js, Express, tRPC
+- **Smart Contracts:** Solidity
+- **Database:** MySQL/TiDB
+- **Authentication:** Manus OAuth, World ID
+- **API:** Taproot Assets Protocol, Lightning Labs
+
+---
+
+## 📊 Language Statistics
+
+| Region | Count | Languages |
+|--------|-------|-----------|
+| ASEAN | 9 | Thai, Lao, Burmese, Vietnamese, Khmer, Malay, Indonesian, Filipino, Tamil |
+| Other | 5 | Russian, Mongolian, Sinhala, Dzongkha, Nepali |
+| India | 21 | Hindi, Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada, Malayalam, Odia, Punjabi, Assamese, Maithili, Santali, Kashmiri, Nepali, Sindhi, Dogri, Manipuri, Bodo, Konkani |
+| Global | 20+ | English, Chinese, Japanese, Korean, Spanish, French, German, Portuguese, Arabic, Turkish, Italian, Dutch, Polish, Swedish, Ukrainian, Czech, Romanian, Greek, Hebrew, Swahili |
+| **TOTAL** | **40+** | **All languages listed above** |
+
+---
+
+## 🌐 Language Features
+
+✅ **Auto-Detection:** Automatically detects user's browser language
+✅ **40+ Languages:** Comprehensive language support
+✅ **Easy Switching:** Manual language selection available
+✅ **Persistent:** Language preference saved locally
+✅ **Fallback:** English fallback for all languages
+✅ **Full Documentation:** Complete documentation in all languages
+
+---
+
+**Dedicated to LiMeiHua Grand Mother (ท่านผู้เฒ่าหลี่เหมยฮัว)**
+
+Created by Mr. Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)
+
+URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
+
+---
+
+**© 2026 LiMeiHua. All Rights Reserved.**
